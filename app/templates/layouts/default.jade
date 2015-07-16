@@ -1,7 +1,7 @@
 include ../helpers/variables
 include ../helpers/mixins
 
-+script([], ['debug.js', 'common.min.js'])
+
 
 doctype html
 html(lang='ru')
@@ -11,5 +11,5 @@ html(lang='ru')
 			include ../blocks/header
 			block content
 			include ../blocks/footer
-
+		+script(['debug.js', 'common.min.js'])
 		include ../blocks/scripts
