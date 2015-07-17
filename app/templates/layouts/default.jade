@@ -1,15 +1,10 @@
 include ../helpers/variables
 include ../helpers/mixins
 
-
-
 doctype html
 html(lang='ru')
 	include ../blocks/head
 	body
-		.main
-			include ../blocks/header
-			block content
-			include ../blocks/footer
+		block content
 		+script(['debug.js', 'common.min.js'])
 		include ../blocks/scripts

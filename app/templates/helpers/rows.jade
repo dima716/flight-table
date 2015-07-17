@@ -1,0 +1,32 @@
+mixin flightDetails(flightDetails)
+	ul(class="flight-details__list")
+		each item in flightDetails
+			li(class="flight-details__item")
+				h4(class="flight-details__heading")=item.heading
+				span(class="flight-details__name")=item.name
+
+mixin rows(rows)
+	each row in rows
+		if row.type == "landing" || row.type == "takeoff"
+			tr(class="timetable__row " + row.type, tabindex="0")
+				td(class="timetable__cell")
+					i(class="flight-icon " + row.columns.flightType)
+				td(class="timetable__cell flight-number")=row.columns.flightNumber
+				td(class="timetable__cell aircompany")
+					img(class="aircompany__logo" src="#{row.columns.aircompanyLogo}")
+					span(class="aircompany__title")=row.columns.aircompanyTitle
+				td(class="timetable__cell airplane")
+					span(class="airplane__type")=row.columns.airplaneType
+					span(class="airplane__type_form_short")=row.columns.airplaneTypeShort
+				td(class="timetable__cell airport")
+					span(class="airport__title")=row.columns.airportTitle
+					span(class="airport__code")=row.columns.airportCode
+				td(class="timetable__cell time")=row.columns.departureTime
+				td(class="timetable__cell time")=row.columns.arrivalTime
+				td(class="timetable__cell status")=row.columns.status
+				td(class="timetable__cell note")=row.columns.note
+		if row.type == "flight-details"
+			tr(class="timetable__row " + row.type, title="Нажмите, чтобы закрыть")
+				td(class="timetable__cell flight-details__wrapper", colspan="9")
+					div(class="flight-details__content")
+						+flightDetails(row.flightDetails)

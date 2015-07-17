@@ -1,0 +1,784 @@
+[
+	{
+		"type": "landing",
+		"columns": {
+			"flightType": "flight-icon_type_landing",
+			"flightNumber": "UN 9488",
+			"aircompanyLogo": "assets/images/logo-transaero.png",
+			"aircompanyTitle": "Трансаэро",
+			"airplaneType": "Boing 733",
+			"airplaneTypeShort": "B 733",
+			"airportTitle": "Кос",
+			"airportCode": "---",
+			"departureTime": "21:31",
+			"arrivalTime": "01:29",
+			"status": "Летит",
+			"note": "Совмещен с рейсом SU 002"
+		}
+	},
+	{
+		"type": "flight-details",
+		"flightDetails": [
+			{
+				"key": "Самолет",
+				"value": "Boing 733"
+			},
+			{
+				"key": "Авиакомпания",
+				"value": "Трансаэро"
+			},
+			{
+				"key": "Код аэропорта",
+				"value": "---"
+			}
+		]
+	},
+	{
+		"type": "landing",
+		"columns": {
+			"flightType": "flight-icon_type_landing",
+			"flightNumber": "U6 512",
+			"aircompanyLogo": "assets/images/logo-ural-airlines.png",
+			"aircompanyTitle": "Уральские авиалинии",
+			"airplaneType": "Airbus 321",
+			"airplaneTypeShort": "A 321",
+			"airportTitle": "Симферополь",
+			"airportCode": "---",
+			"departureTime": "23:02",
+			"arrivalTime": "01:44",
+			"status": "Летит",
+			"note": "---"
+		}
+	},
+	{
+		"type": "flight-details",
+		"flightDetails": [
+			{
+				"key": "Самолет",
+				"value": "Airbus 321"
+			},
+			{
+				"key": "Авиакомпания",
+				"value": "Уральские авиалинии"
+			},
+			{
+				"key": "Код аэропорта",
+				"value": "---"
+			}
+		]
+	},
+	{
+		"type": "landing",
+		"columns": {
+			"flightType": "flight-icon_type_landing",
+			"flightNumber": "SU 034",
+			"aircompanyLogo": "assets/images/logo-aeroflot.png",
+			"aircompanyTitle": "Аэрофлот",
+			"airplaneType": "Airbus 321",
+			"airplaneTypeShort": "A321",
+			"airportTitle": "Москва",
+			"airportCode": "SVO",
+			"departureTime": "23:21",
+			"arrivalTime": "00:21",
+			"status": "Приземлился",
+			"note": "Совмещен с рейсом S7 611"
+		}
+	},
+	{
+		"type": "flight-details",
+		"flightDetails": [
+			{
+				"key": "Самолет",
+				"value": "Airbus 321"
+			},
+			{
+				"key": "Авиакомпания",
+				"value": "Aeroflot"
+			},
+			{
+				"key": "Код аэропорта",
+				"value": "SVO"
+			}
+		]
+	},
+	{
+		"type": "landing",
+		"columns": {
+			"flightType": "flight-icon_type_landing",
+			"flightNumber": "UT 489",
+			"aircompanyLogo": "assets/images/logo-utair.png",
+			"aircompanyTitle": "ЮТэйр",
+			"airplaneType": "Boing 735",
+			"airplaneTypeShort": "B735",
+			"airportTitle": "Москва",
+			"airportCode": "VKO",
+			"departureTime": "00:08",
+			"arrivalTime": "01:09",
+			"status": "Летит",
+			"note": "Совмещен с рейсом SU 001"
+		}
+	},
+	{
+		"type": "flight-details",
+		"flightDetails": [
+			{
+				"key": "Самолет",
+				"value": "Boing 735"
+			},
+			{
+				"key": "Авиакомпания",
+				"value": "ЮТэйр"
+			},
+			{
+				"key": "Код аэропорта",
+				"value": "VKO"
+			}
+		]
+	},
+	{
+		"type": "landing",
+		"columns": {
+			"flightType": "flight-icon_type_landing",
+			"flightNumber": "S7 037",
+			"aircompanyLogo": "assets/images/logo-s7-airlines.png",
+			"aircompanyTitle": "S7",
+			"airplaneType": "Airbus 319",
+			"airplaneTypeShort": "A 319",
+			"airportTitle": "Москва",
+			"airportCode": "DME",
+			"departureTime": "23:02",
+			"arrivalTime": "01:44",
+			"status": "Задерживается до 04:00",
+			"note": "---"
+		}
+	},
+	{
+		"type": "flight-details",
+		"flightDetails": [
+			{
+				"key": "Самолет",
+				"value": "Airbus 319"
+			},
+			{
+				"key": "Авиакомпания",
+				"value": "S7"
+			},
+			{
+				"key": "Код аэропорта",
+				"value": "DME"
+			}
+		]
+	},
+	{
+		"type": "takeoff",
+		"columns": {
+			"flightType": "flight-icon_type_takeoff",
+			"flightNumber": "UN 467",
+			"aircompanyLogo": "assets/images/logo-transaero.png",
+			"aircompanyTitle": "Трансаэро",
+			"airplaneType": "Boing 763",
+			"airplaneTypeShort": "B 763",
+			"airportTitle": "Ларнака",
+			"airportCode": "---",
+			"departureTime": "04:00",
+			"arrivalTime": "07:52",
+			"status": "Вылетел",
+			"note": "Совмещен с рейсом SU 003"
+		}
+	},
+	{
+		"type": "flight-details",
+		"flightDetails": [
+			{
+				"key": "Самолет",
+				"value": "Boing 763"
+			},
+			{
+				"key": "Авиакомпания",
+				"value": "Трансаэро"
+			},
+			{
+				"key": "Код аэропорта",
+				"value": "---"
+			}
+		]
+	},
+	{
+		"type": "takeoff",
+		"columns": {
+			"flightType": "flight-icon_type_takeoff",
+			"flightNumber": "U6 513",
+			"aircompanyLogo": "assets/images/logo-ural-airlines.png",
+			"aircompanyTitle": "Уральские авиалинии",
+			"airplaneType": "Airbus 320",
+			"airplaneTypeShort": "A 320",
+			"airportTitle": "Симферополь",
+			"airportCode": "---",
+			"departureTime": "04:32",
+			"arrivalTime": "07:38",
+			"status": "Посадка закончена",
+			"note": "Совмещен с рейсом SU 027"
+		}
+	},
+	{
+		"type": "flight-details",
+		"flightDetails": [
+			{
+				"key": "Самолет",
+				"value": "Airbus 320"
+			},
+			{
+				"key": "Авиакомпания",
+				"value": "Уральские авиалинии"
+			},
+			{
+				"key": "Код аэропорта",
+				"value": "---"
+			}
+		]
+	},
+	{
+		"type": "takeoff",
+		"columns": {
+			"flightType": "flight-icon_type_takeoff",
+			"flightNumber": "AF 1153",
+			"aircompanyLogo": "assets/images/logo-air-france.png",
+			"aircompanyTitle": "Air France",
+			"airplaneType": "Airbus 319",
+			"airplaneTypeShort": "A 319",
+			"airportTitle": "Париж",
+			"airportCode": "CDG",
+			"departureTime": "06:15",
+			"arrivalTime": "09:36",
+			"status": "Задерживается до 08:00",
+			"note": "Совмещен с рейсом SU 004"
+		}
+	},
+	{
+		"type": "flight-details",
+		"flightDetails": [
+			{
+				"key": "Самолет",
+				"value": "Airbus 319"
+			},
+			{
+				"key": "Авиакомпания",
+				"value": "Air France"
+			},
+			{
+				"key": "Код аэропорта",
+				"value": "CDG"
+			}
+		]
+	},
+	{
+		"type": "takeoff",
+		"columns": {
+			"flightType": "flight-icon_type_takeoff",
+			"flightNumber": "UN 027",
+			"aircompanyLogo": "assets/images/logo-transaero.png",
+			"aircompanyTitle": "Трансаэро",
+			"airplaneType": "Boing 744",
+			"airplaneTypeShort": "B 744",
+			"airportTitle": "Москва",
+			"airportCode": "VKO",
+			"departureTime": "07:57",
+			"arrivalTime": "09:28",
+			"status": "Ожидание посадки",
+			"note": "---"
+		}
+	},
+	{
+		"type": "flight-details",
+		"flightDetails": [
+			{
+				"key": "Самолет",
+				"value": "Boing 744"
+			},
+			{
+				"key": "Авиакомпания",
+				"value": "Трансаэро"
+			},
+			{
+				"key": "Код аэропорта",
+				"value": "VKO"
+			}
+		]
+	},
+	{
+		"type": "takeoff",
+		"columns": {
+			"flightType": "flight-icon_type_takeoff",
+			"flightNumber": "UN 9491",
+			"aircompanyLogo": "assets/images/logo-transaero.png",
+			"aircompanyTitle": "Трансаэро",
+			"airplaneType": "Boing 733",
+			"airplaneTypeShort": "B 733",
+			"airportTitle": "Тиват",
+			"airportCode": "---",
+			"departureTime": "06:48",
+			"arrivalTime": "09:57",
+			"status": "Посадка закончена",
+			"note": "---"
+		}
+	},
+	{
+		"type": "flight-details",
+		"flightDetails": [
+			{
+				"key": "Самолет",
+				"value": "Boing 733"
+			},
+			{
+				"key": "Авиакомпания",
+				"value": "Трансаэро"
+			},
+			{
+				"key": "Код аэропорта",
+				"value": "---"
+			}
+		]
+	},
+	{
+		"type": "takeoff",
+		"columns": {
+			"flightType": "flight-icon_type_takeoff",
+			"flightNumber": "U6 3231",
+			"aircompanyLogo": "assets/images/logo-ural-airlines.png",
+			"aircompanyTitle": "Уральские авиалинии",
+			"airplaneType": "Airbus 321",
+			"airplaneTypeShort": "A 321",
+			"airportTitle": "Анталья",
+			"airportCode": "---",
+			"departureTime": "07:00",
+			"arrivalTime": "10:33",
+			"status": "Ожидание посадки",
+			"note": "---"
+		}
+	},
+	{
+		"type": "flight-details",
+		"flightDetails": [
+			{
+				"key": "Самолет",
+				"value": "Airbus 321"
+			},
+			{
+				"key": "Авиакомпания",
+				"value": "Уральские авиалинии"
+			},
+			{
+				"key": "Код аэропорта",
+				"value": "---"
+			}
+		]
+	},
+	{
+		"type": "landing",
+		"columns": {
+			"flightType": "flight-icon_type_landing",
+			"flightNumber": "SU 036",
+			"aircompanyLogo": "assets/images/logo-aeroflot.png",
+			"aircompanyTitle": "Аэрофлот",
+			"airplaneType": "Airbus 320",
+			"airplaneTypeShort": "A 320",
+			"airportTitle": "Москва",
+			"airportCode": " SVO",
+			"departureTime": "01:35",
+			"arrivalTime": "02:28",
+			"status": "Вылетел",
+			"note": "---"
+		}
+	},
+	{
+		"type": "flight-details",
+		"flightDetails": [
+			{
+				"key": "Самолет",
+				"value": "Airbus 320"
+			},
+			{
+				"key": "Авиакомпания",
+				"value": "Аэрофлот"
+			},
+			{
+				"key": "Код аэропорта",
+				"value": "SVO"
+			}
+		]
+	},
+	{
+		"type": "landing",
+		"columns": {
+			"flightType": "flight-icon_type_landing",
+			"flightNumber": "UN 9480",
+			"aircompanyLogo": "assets/images/logo-transaero.png",
+			"aircompanyTitle": "Трансаэро",
+			"airplaneType": "Boing 763",
+			"airplaneTypeShort": "B 763",
+			"airportTitle": "Хургада",
+			"airportCode": " ---",
+			"departureTime": "22:57",
+			"arrivalTime": "04:14",
+			"status": "Вылетел",
+			"note": "---"
+		}
+	},
+	{
+		"type": "flight-details",
+		"flightDetails": [
+			{
+				"key": "Самолет",
+				"value": "Boing 763"
+			},
+			{
+				"key": "Авиакомпания",
+				"value": "Трансаэро"
+			},
+			{
+				"key": "Код аэропорта",
+				"value": "---"
+			}
+		]
+	},
+	{
+		"type": "landing",
+		"columns": {
+			"flightType": "flight-icon_type_landing",
+			"flightNumber": "UN 9460A",
+			"aircompanyLogo": "assets/images/logo-transaero.png",
+			"aircompanyTitle": "Трансаэро",
+			"airplaneType": "Boing 763",
+			"airplaneTypeShort": "B 763",
+			"airportTitle": "Анталья",
+			"airportCode": " ---",
+			"departureTime": "23:45",
+			"arrivalTime": "03:42",
+			"status": "Вылетел",
+			"note": "---"
+		}
+	},
+	{
+		"type": "flight-details",
+		"flightDetails": [
+			{
+				"key": "Самолет",
+				"value": "Boing 763"
+			},
+			{
+				"key": "Авиакомпания",
+				"value": "Трансаэро"
+			},
+			{
+				"key": "Код аэропорта",
+				"value": "---"
+			}
+		]
+	},
+	{
+		"type": "takeoff",
+		"columns": {
+			"flightType": "flight-icon_type_takeoff",
+			"flightNumber": "SU 007",
+			"aircompanyLogo": "assets/images/logo-aeroflot.png",
+			"aircompanyTitle": "Аэрофлот",
+			"airplaneType": "Airbus 321",
+			"airplaneTypeShort": "A 321",
+			"airportTitle": "Москва",
+			"airportCode": "SVO",
+			"departureTime": "09:22",
+			"arrivalTime": "10:24",
+			"status": "Отменён",
+			"note": "Совмещен с рейсом UT 002"
+		}
+	},
+	{
+		"type": "flight-details",
+		"flightDetails": [
+			{
+				"key": "Самолет",
+				"value": "Airbus 321"
+			},
+			{
+				"key": "Авиакомпания",
+				"value": "Аэрофлот"
+			},
+			{
+				"key": "Код аэропорта",
+				"value": "SVO"
+			}
+		]
+	},
+	{
+		"type": "takeoff",
+		"columns": {
+			"flightType": "flight-icon_type_takeoff",
+			"flightNumber": "SU 007",
+			"aircompanyLogo": "assets/images/logo-s7-airlines.png",
+			"aircompanyTitle": "S7",
+			"airplaneType": "Airbus 319",
+			"airplaneTypeShort": "A 319",
+			"airportTitle": "Москва",
+			"airportCode": "DME",
+			"departureTime": "10:43",
+			"arrivalTime": "12:08",
+			"status": "Отменен",
+			"note": "Совмещен с рейсом SU 010"
+		}
+	},
+	{
+		"type": "flight-details",
+		"flightDetails": [
+			{
+				"key": "Самолет",
+				"value": "Airbus 319"
+			},
+			{
+				"key": "Авиакомпания",
+				"value": "S7"
+			},
+			{
+				"key": "Код аэропорта",
+				"value": "DME"
+			}
+		]
+	},
+	{
+		"type": "takeoff",
+		"columns": {
+			"flightType": "flight-icon_type_takeoff",
+			"flightNumber": "UT 475",
+			"aircompanyLogo": "assets/images/logo-utair.png",
+			"aircompanyTitle": "ЮТэйр",
+			"airplaneType": "Boing 735",
+			"airplaneTypeShort": "B 735",
+			"airportTitle": "Томск",
+			"airportCode": "DME",
+			"departureTime": "10:13",
+			"arrivalTime": "14:19",
+			"status": "Регистрация",
+			"note": "---"
+		}
+	},
+	{
+		"type": "flight-details",
+		"flightDetails": [
+			{
+				"key": "Самолет",
+				"value": "Boing 735"
+			},
+			{
+				"key": "Авиакомпания",
+				"value": "ЮТэйр"
+			},
+			{
+				"key": "Код аэропорта",
+				"value": "---"
+			}
+		]
+	},
+	{
+		"type": "landing",
+		"columns": {
+			"flightType": "flight-icon_type_landing",
+			"flightNumber": "UN 9400",
+			"aircompanyLogo": "assets/images/logo-transaero.png",
+			"aircompanyTitle": "Трансаэро",
+			"airplaneType": "Boing 733",
+			"airplaneTypeShort": "B 733",
+			"airportTitle": "Санторини",
+			"airportCode": "SNT",
+			"departureTime": "22:30",
+			"arrivalTime": "01:57",
+			"status": "Приземлился",
+			"note": "Совмещен с рейсом SU 010"
+		}
+	},
+	{
+		"type": "flight-details",
+		"flightDetails": [
+			{
+				"key": "Самолет",
+				"value": "Boing 733"
+			},
+			{
+				"key": "Авиакомпания",
+				"value": "Трансаэро"
+			},
+			{
+				"key": "Код аэропорта",
+				"value": "SNT"
+			}
+		]
+	},
+	{
+		"type": "landing",
+		"columns": {
+			"flightType": "flight-icon_type_landing",
+			"flightNumber": "U6 888",
+			"aircompanyLogo": "assets/images/logo-ural-airlines.png",
+			"aircompanyTitle": "Уральские авиалинии",
+			"airplaneType": "Airbus 321",
+			"airplaneTypeShort": "A 321",
+			"airportTitle": "Сочи",
+			"airportCode": "---",
+			"departureTime": "23:30",
+			"arrivalTime": "02:11",
+			"status": "Отменён",
+			"note": "---"
+		}
+	},
+	{
+		"type": "flight-details",
+		"flightDetails": [
+			{
+				"key": "Самолет",
+				"value": "Airbus 321"
+			},
+			{
+				"key": "Авиакомпания",
+				"value": "Уральские авиалинии"
+			},
+			{
+				"key": "Код аэропорта",
+				"value": "---"
+			}
+		]
+	},
+	{
+		"type": "landing",
+		"columns": {
+			"flightType": "flight-icon_type_landing",
+			"flightNumber": "SU 078",
+			"aircompanyLogo": "assets/images/logo-aeroflot.png",
+			"aircompanyTitle": "Аэрофлот",
+			"airplaneType": "Airbus 321",
+			"airplaneTypeShort": "A321",
+			"airportTitle": "Ульяновск",
+			"airportCode": "ULC",
+			"departureTime": "01:00",
+			"arrivalTime": "02:45",
+			"status": "По расписанию",
+			"note": "Совмещен с рейсом S7 111"
+		}
+	},
+	{
+		"type": "flight-details",
+		"flightDetails": [
+			{
+				"key": "Самолет",
+				"value": "Airbus 321"
+			},
+			{
+				"key": "Авиакомпания",
+				"value": "Aeroflot"
+			},
+			{
+				"key": "Код аэропорта",
+				"value": "ULC"
+			}
+		]
+	},
+	{
+		"type": "landing",
+		"columns": {
+			"flightType": "flight-icon_type_landing",
+			"flightNumber": "UT 900",
+			"aircompanyLogo": "assets/images/logo-utair.png",
+			"aircompanyTitle": "ЮТэйр",
+			"airplaneType": "Boing 735",
+			"airplaneTypeShort": "B735",
+			"airportTitle": "Москва",
+			"airportCode": "VKO",
+			"departureTime": "01:08",
+			"arrivalTime": "02:19",
+			"status": "По расписанию",
+			"note": "Совмещен с рейсом SU 015"
+		}
+	},
+	{
+		"type": "flight-details",
+		"flightDetails": [
+			{
+				"key": "Самолет",
+				"value": "Boing 735"
+			},
+			{
+				"key": "Авиакомпания",
+				"value": "ЮТэйр"
+			},
+			{
+				"key": "Код аэропорта",
+				"value": "VKO"
+			}
+		]
+	},
+	{
+		"type": "landing",
+		"columns": {
+			"flightType": "flight-icon_type_landing",
+			"flightNumber": "S7 091",
+			"aircompanyLogo": "assets/images/logo-s7-airlines.png",
+			"aircompanyTitle": "S7",
+			"airplaneType": "Airbus 319",
+			"airplaneTypeShort": "A 319",
+			"airportTitle": "Москва",
+			"airportCode": "DME",
+			"departureTime": "23:58",
+			"arrivalTime": "02:30",
+			"status": "Задерживается до 03:00",
+			"note": "Совмещен с рейсом SU 020"
+		}
+	},
+	{
+		"type": "flight-details",
+		"flightDetails": [
+			{
+				"key": "Самолет",
+				"value": "Airbus 319"
+			},
+			{
+				"key": "Авиакомпания",
+				"value": "S7"
+			},
+			{
+				"key": "Код аэропорта",
+				"value": "DME"
+			}
+		]
+	},
+	{
+		"type": "takeoff",
+		"columns": {
+			"flightType": "flight-icon_type_takeoff",
+			"flightNumber": "UN 345",
+			"aircompanyLogo": "assets/images/logo-transaero.png",
+			"aircompanyTitle": "Трансаэро",
+			"airplaneType": "Boing 763",
+			"airplaneTypeShort": "B 763",
+			"airportTitle": "Прага",
+			"airportCode": "PRG",
+			"departureTime": "04:00",
+			"arrivalTime": "09:52",
+			"status": "Вылетел",
+			"note": "---"
+		}
+	},
+	{
+		"type": "flight-details",
+		"flightDetails": [
+			{
+				"key": "Самолет",
+				"value": "Boing 763"
+			},
+			{
+				"key": "Авиакомпания",
+				"value": "Трансаэро"
+			},
+			{
+				"key": "Код аэропорта",
+				"value": "PRG"
+			}
+		]
+	}
+]
