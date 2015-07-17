@@ -15,6 +15,7 @@ block content
 			tr(class="timetable__row")
 				th(class="timetable__cell timetable__cell_type_heading") Тип рейса
 				th(class="timetable__cell timetable__cell_type_heading") Номер рейса
+				th(class="timetable__cell timetable__cell_type_heading") Логотип авиакомпании
 				th(class="timetable__cell timetable__cell_type_heading") Авиакомпания
 				th(class="timetable__cell timetable__cell_type_heading") Тип воздушного судна
 				th(class="timetable__cell timetable__cell_type_heading") Аэропорт назначения
@@ -22,7 +23,7 @@ block content
 				th(class="timetable__cell timetable__cell_type_heading") Время прилета
 				th(class="timetable__cell timetable__cell_type_heading") Cтатус рейса
 				th(class="timetable__cell timetable__cell_type_heading") Примечание
-		tbody
+		tbody(class="timetable__body")
 			+rows(getData('rows'))
 	div(class="message") Для отображения рейсов используйте галочки
 

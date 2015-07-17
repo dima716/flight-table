@@ -1,3 +1,118 @@
+.timetable
+	width 1000px
+	vertical-align middle
+	text-align center
+	margin auto
+	overflow hidden
+	border: 1px solid #ddd
+
+	&__row
+		+to-width(800px)
+			cursor: pointer
+
+	&__body
+		& > .timetable__row:nth-child(4n+1) > .timetable__cell
+			border-bottom none
+			border-top none
+
+		& > .timetable__row:nth-child(4n+1) > .timetable__cell:after
+			content ""
+			position absolute
+			top 0
+			left 0
+			width 100%
+			height 100%
+			background-color #eee
+			z-index -2
+
+		& > .timetable__row:not(.flight-details):hover
+			background-color #ffa
+
+		& > .timetable__row:not(.flight-details) > .timetable__cell:hover:before
+			content ""
+			position absolute
+			width 100%
+			height 10000px
+			top: -5000px
+			left: 0
+			background-color #ffa
+			z-index -1
+
+		+to-width(800px)
+			& > .timetable__row:focus + .flight-details .flight-details__wrapper
+				border: 1px solid #ddd
+
+			& > .timetable__row:focus + .flight-details .flight-details__content
+				opacity: 1
+				height 45px
+
+
+	&__cell
+		position relative
+		padding 5px
+		border 1px solid #ddd
+
+		+to-width(900px)
+			&:nth-child(4)
+				display none
+
+		&_type_heading
+			font-weight bold
+
+.flight-details
+	background-color: #fff
+
+	&__item
+		display inline-block
+		vertical-align top
+		margin-right 25px
+
+	&__wrapper
+		padding: 0
+		padding-left 15px
+		text-align left
+		border: none
+
+	&__content
+		opacity: 0
+		height: 0
+		transition: opacity .3s ease,height .3s ease
+
+	&__heading
+		margin 5px 0
+		font-size 1.2em
+		font-weight bold
+
+.airplane
+	&__type_form_short
+		display none
+
+	+to-width(800px)
+		&__type
+			display none
+		&__type_form_short
+			display block
+
+.airport
+	&__title
+		margin-right 5px
+
+	+to-width(800px)
+		&__code
+			display none
+
+	&__code
+		color #555
+
+.flight-icon
+	display inline-block
+
+	&_type_landing
+		sprite $airplane_landing
+	&_type_takeoff
+		sprite $airplane_takeoff
+
+
 .controls
 	text-align center
 	margin-bottom 15px
@@ -8,33 +123,8 @@
 	&__label
 		margin-right 10px
 
-.timetable
-	width: 100%
-	vertical-align middle
-	text-align center
-
-	&__cell
-		padding 5px
-
-.flight-details
-	display none
-
-.airplane
-	&__type_form_short
-		display none
-
-.aircompany
-	&__logo
-		vertical-align middle
-		margin-right 5px
-
-.flight-icon
-	display inline-block
-
-	&_type_landing
-		sprite $airplane_landing
-	&_type_takeoff
-		sprite $airplane_takeoff
-
 .message
+	display none
 	text-align center
+
+

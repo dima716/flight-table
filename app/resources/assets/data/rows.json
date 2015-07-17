@@ -9,7 +9,6 @@
 			"airplaneType": "Boing 733",
 			"airplaneTypeShort": "B 733",
 			"airportTitle": "Кос",
-			"airportCode": "---",
 			"departureTime": "21:31",
 			"arrivalTime": "01:29",
 			"status": "Летит",
@@ -26,10 +25,6 @@
 			{
 				"key": "Авиакомпания",
 				"value": "Трансаэро"
-			},
-			{
-				"key": "Код аэропорта",
-				"value": "---"
 			}
 		]
 	},
@@ -41,9 +36,8 @@
 			"aircompanyLogo": "assets/images/logo-ural-airlines.png",
 			"aircompanyTitle": "Уральские авиалинии",
 			"airplaneType": "Airbus 321",
-			"airplaneTypeShort": "A 321",
+			"airplaneTypeShort": "A321",
 			"airportTitle": "Симферополь",
-			"airportCode": "---",
 			"departureTime": "23:02",
 			"arrivalTime": "01:44",
 			"status": "Летит",
@@ -60,10 +54,6 @@
 			{
 				"key": "Авиакомпания",
 				"value": "Уральские авиалинии"
-			},
-			{
-				"key": "Код аэропорта",
-				"value": "---"
 			}
 		]
 	},
@@ -143,7 +133,7 @@
 			"aircompanyLogo": "assets/images/logo-s7-airlines.png",
 			"aircompanyTitle": "S7",
 			"airplaneType": "Airbus 319",
-			"airplaneTypeShort": "A 319",
+			"airplaneTypeShort": "A319",
 			"airportTitle": "Москва",
 			"airportCode": "DME",
 			"departureTime": "23:02",
@@ -177,9 +167,8 @@
 			"aircompanyLogo": "assets/images/logo-transaero.png",
 			"aircompanyTitle": "Трансаэро",
 			"airplaneType": "Boing 763",
-			"airplaneTypeShort": "B 763",
+			"airplaneTypeShort": "B763",
 			"airportTitle": "Ларнака",
-			"airportCode": "---",
 			"departureTime": "04:00",
 			"arrivalTime": "07:52",
 			"status": "Вылетел",
@@ -196,10 +185,6 @@
 			{
 				"key": "Авиакомпания",
 				"value": "Трансаэро"
-			},
-			{
-				"key": "Код аэропорта",
-				"value": "---"
 			}
 		]
 	},
@@ -213,7 +198,6 @@
 			"airplaneType": "Airbus 320",
 			"airplaneTypeShort": "A 320",
 			"airportTitle": "Симферополь",
-			"airportCode": "---",
 			"departureTime": "04:32",
 			"arrivalTime": "07:38",
 			"status": "Посадка закончена",
@@ -230,10 +214,6 @@
 			{
 				"key": "Авиакомпания",
 				"value": "Уральские авиалинии"
-			},
-			{
-				"key": "Код аэропорта",
-				"value": "---"
 			}
 		]
 	},
@@ -245,7 +225,7 @@
 			"aircompanyLogo": "assets/images/logo-air-france.png",
 			"aircompanyTitle": "Air France",
 			"airplaneType": "Airbus 319",
-			"airplaneTypeShort": "A 319",
+			"airplaneTypeShort": "A319",
 			"airportTitle": "Париж",
 			"airportCode": "CDG",
 			"departureTime": "06:15",
@@ -313,9 +293,8 @@
 			"aircompanyLogo": "assets/images/logo-transaero.png",
 			"aircompanyTitle": "Трансаэро",
 			"airplaneType": "Boing 733",
-			"airplaneTypeShort": "B 733",
+			"airplaneTypeShort": "B733",
 			"airportTitle": "Тиват",
-			"airportCode": "---",
 			"departureTime": "06:48",
 			"arrivalTime": "09:57",
 			"status": "Посадка закончена",
@@ -332,10 +311,6 @@
 			{
 				"key": "Авиакомпания",
 				"value": "Трансаэро"
-			},
-			{
-				"key": "Код аэропорта",
-				"value": "---"
 			}
 		]
 	},
@@ -347,9 +322,8 @@
 			"aircompanyLogo": "assets/images/logo-ural-airlines.png",
 			"aircompanyTitle": "Уральские авиалинии",
 			"airplaneType": "Airbus 321",
-			"airplaneTypeShort": "A 321",
+			"airplaneTypeShort": "A321",
 			"airportTitle": "Анталья",
-			"airportCode": "---",
 			"departureTime": "07:00",
 			"arrivalTime": "10:33",
 			"status": "Ожидание посадки",
@@ -366,10 +340,6 @@
 			{
 				"key": "Авиакомпания",
 				"value": "Уральские авиалинии"
-			},
-			{
-				"key": "Код аэропорта",
-				"value": "---"
 			}
 		]
 	},
@@ -415,9 +385,8 @@
 			"aircompanyLogo": "assets/images/logo-transaero.png",
 			"aircompanyTitle": "Трансаэро",
 			"airplaneType": "Boing 763",
-			"airplaneTypeShort": "B 763",
+			"airplaneTypeShort": "B763",
 			"airportTitle": "Хургада",
-			"airportCode": " ---",
 			"departureTime": "22:57",
 			"arrivalTime": "04:14",
 			"status": "Вылетел",
@@ -434,10 +403,6 @@
 			{
 				"key": "Авиакомпания",
 				"value": "Трансаэро"
-			},
-			{
-				"key": "Код аэропорта",
-				"value": "---"
 			}
 		]
 	},
@@ -449,9 +414,8 @@
 			"aircompanyLogo": "assets/images/logo-transaero.png",
 			"aircompanyTitle": "Трансаэро",
 			"airplaneType": "Boing 763",
-			"airplaneTypeShort": "B 763",
+			"airplaneTypeShort": "B763",
 			"airportTitle": "Анталья",
-			"airportCode": " ---",
 			"departureTime": "23:45",
 			"arrivalTime": "03:42",
 			"status": "Вылетел",
@@ -468,10 +432,6 @@
 			{
 				"key": "Авиакомпания",
 				"value": "Трансаэро"
-			},
-			{
-				"key": "Код аэропорта",
-				"value": "---"
 			}
 		]
 	},
@@ -483,7 +443,7 @@
 			"aircompanyLogo": "assets/images/logo-aeroflot.png",
 			"aircompanyTitle": "Аэрофлот",
 			"airplaneType": "Airbus 321",
-			"airplaneTypeShort": "A 321",
+			"airplaneTypeShort": "A321",
 			"airportTitle": "Москва",
 			"airportCode": "SVO",
 			"departureTime": "09:22",
@@ -517,7 +477,7 @@
 			"aircompanyLogo": "assets/images/logo-s7-airlines.png",
 			"aircompanyTitle": "S7",
 			"airplaneType": "Airbus 319",
-			"airplaneTypeShort": "A 319",
+			"airplaneTypeShort": "A319",
 			"airportTitle": "Москва",
 			"airportCode": "DME",
 			"departureTime": "10:43",
@@ -551,7 +511,7 @@
 			"aircompanyLogo": "assets/images/logo-utair.png",
 			"aircompanyTitle": "ЮТэйр",
 			"airplaneType": "Boing 735",
-			"airplaneTypeShort": "B 735",
+			"airplaneTypeShort": "B735",
 			"airportTitle": "Томск",
 			"airportCode": "DME",
 			"departureTime": "10:13",
@@ -570,10 +530,6 @@
 			{
 				"key": "Авиакомпания",
 				"value": "ЮТэйр"
-			},
-			{
-				"key": "Код аэропорта",
-				"value": "---"
 			}
 		]
 	},
@@ -619,9 +575,8 @@
 			"aircompanyLogo": "assets/images/logo-ural-airlines.png",
 			"aircompanyTitle": "Уральские авиалинии",
 			"airplaneType": "Airbus 321",
-			"airplaneTypeShort": "A 321",
+			"airplaneTypeShort": "A321",
 			"airportTitle": "Сочи",
-			"airportCode": "---",
 			"departureTime": "23:30",
 			"arrivalTime": "02:11",
 			"status": "Отменён",
@@ -638,10 +593,6 @@
 			{
 				"key": "Авиакомпания",
 				"value": "Уральские авиалинии"
-			},
-			{
-				"key": "Код аэропорта",
-				"value": "---"
 			}
 		]
 	},
@@ -721,7 +672,7 @@
 			"aircompanyLogo": "assets/images/logo-s7-airlines.png",
 			"aircompanyTitle": "S7",
 			"airplaneType": "Airbus 319",
-			"airplaneTypeShort": "A 319",
+			"airplaneTypeShort": "A319",
 			"airportTitle": "Москва",
 			"airportCode": "DME",
 			"departureTime": "23:58",
@@ -755,7 +706,7 @@
 			"aircompanyLogo": "assets/images/logo-transaero.png",
 			"aircompanyTitle": "Трансаэро",
 			"airplaneType": "Boing 763",
-			"airplaneTypeShort": "B 763",
+			"airplaneTypeShort": "B763",
 			"airportTitle": "Прага",
 			"airportCode": "PRG",
 			"departureTime": "04:00",
