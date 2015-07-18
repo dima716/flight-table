@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="imagetoolbar" content="no">
+		<meta name="msthemecompatible" content="no">
+		<meta name="cleartype" content="on">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="address=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="application-name" content="Flight Table">
+		<meta name="msapplication-tooltip" content="Первое задание по ШРИ - табло рейсов.">
+		<meta name="msapplication-TileColor" content="#00aba9">
+		<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+		<meta name="msapplication-starturl" content="http://dima716.github.io/flight-table/">
+		<meta name="msapplication-tap-highlight" content="no">
+		<title>Табло рейсов</title>
+		<meta name="description">
+		<meta name="keywords">
+		<meta name="copyright">
+		<link href="/assets/styles/common.css?1437250158028" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="controls">
+			<input type="checkbox" id="takeoff-check" checked class="controls__checkbox">
+			<label for="takeoff-check" class="controls__label">Вылет</label>
+			<input type="checkbox" id="landing-check" checked class="controls__checkbox">
+			<label for="landing-check" class="controls__label">Прилет</label>
+		</div>
+		<table class="timetable">
+			<thead>
+				<tr class="timetable__row">
+					<th class="timetable__cell timetable__cell_type_heading">Тип рейса</th>
+					<th class="timetable__cell timetable__cell_type_heading">Номер рейса</th>
+					<th class="timetable__cell timetable__cell_type_heading">Логотип авиакомпании</th>
+					<th class="timetable__cell timetable__cell_type_heading">Авиакомпания</th>
+					<th class="timetable__cell timetable__cell_type_heading">Тип воздушного судна</th>
+					<th class="timetable__cell timetable__cell_type_heading">Аэропорт</th>
+					<th class="timetable__cell timetable__cell_type_heading">Время вылета</th>
+					<th class="timetable__cell timetable__cell_type_heading">Время прилета</th>
+					<th class="timetable__cell timetable__cell_type_heading">Cтатус рейса</th>
+					<th class="timetable__cell timetable__cell_type_heading">Примечание</th>
+				</tr>
+			</thead>
+			<tbody class="timetable__body">
+				<tr tabindex="0" class="timetable__row landing">
+					<td class="timetable__cell"><i class="flight-icon flight-icon_type_landing"></i>
+					</td>
+					<td class="timetable__cell flight-number">UN 9488</td>
+					<td class="timetable__cell">
+						<img src="assets/images/logo-transaero.png" class="aircompany__logo" />
+					</td>
+					<td class="timetable__cell aircompany-title">Трансаэро</td>
+					<td class="timetable__cell airplane"><span class="airplane__type">Boing 733</span><span class="airplane__type_form_short">B 733</span>
+					</td>
+					<td class="timetable__cell airport"><span class="airport__title">Кос</span>
+					</td>
+					<td class="timetable__cell time">21:31</td>
+					<td class="timetable__cell time">01:29</td>
+					<td class="timetable__cell status">Летит</td>
+					<td class="timetable__cell note">Совмещен с рейсом SU 002</td>
+				</tr>
+				<tr title="Нажмите, чтобы закрыть" class="timetable__row flight-details">
+					<td colspan="10" class="timetable__cell flight-details__wrapper">
+						<div class="flight-details__content">
+							<ul class="flight-details__list">
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Авиакомпания</h4><span class="flight-details__name">Трансаэро</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Логотип авиакомпании</h4>
+									<img src="assets/images/logo-transaero.png" class="aircompany__logo" />
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Тип воздушного судна</h4><span class="flight-details__name">Boing 733</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Аэропорт</h4><span class="flight-details__name">Кос</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время вылета</h4><span class="flight-details__name">21:31</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время прилета</h4><span class="flight-details__name">01:29</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Примечание</h4><span class="flight-details__name">Совмещен с рейсом SU 002</span>
+								</li>
+							</ul>
+						</div>
+					</td>
+				</tr>
+				<tr tabindex="0" class="timetable__row landing">
+					<td class="timetable__cell"><i class="flight-icon flight-icon_type_landing"></i>
+					</td>
+					<td class="timetable__cell flight-number">U6 512</td>
+					<td class="timetable__cell">
+						<img src="assets/images/logo-ural-airlines.png" class="aircompany__logo" />
+					</td>
+					<td class="timetable__cell aircompany-title">Уральские авиалинии</td>
+					<td class="timetable__cell airplane"><span class="airplane__type">Airbus 321</span><span class="airplane__type_form_short">A321</span>
+					</td>
+					<td class="timetable__cell airport"><span class="airport__title">Симферополь</span>
+					</td>
+					<td class="timetable__cell time">23:02</td>
+					<td class="timetable__cell time">01:44</td>
+					<td class="timetable__cell status">Летит</td>
+					<td class="timetable__cell note">---</td>
+				</tr>
+				<tr title="Нажмите, чтобы закрыть" class="timetable__row flight-details">
+					<td colspan="10" class="timetable__cell flight-details__wrapper">
+						<div class="flight-details__content">
+							<ul class="flight-details__list">
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Авиакомпания</h4><span class="flight-details__name">Уральские авиалинии</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Логотип авиакомпании</h4>
+									<img src="assets/images/logo-ural-airlines.png" class="aircompany__logo" />
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Тип воздушного судна</h4><span class="flight-details__name">Airbus 321</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Аэропорт</h4><span class="flight-details__name">Симферополь</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время вылета</h4><span class="flight-details__name">23:02</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время прилета</h4><span class="flight-details__name">01:44</span>
+								</li>
+							</ul>
+						</div>
+					</td>
+				</tr>
+				<tr tabindex="0" class="timetable__row landing">
+					<td class="timetable__cell"><i class="flight-icon flight-icon_type_landing"></i>
+					</td>
+					<td class="timetable__cell flight-number">SU 034</td>
+					<td class="timetable__cell">
+						<img src="assets/images/logo-aeroflot.png" class="aircompany__logo" />
+					</td>
+					<td class="timetable__cell aircompany-title">Аэрофлот</td>
+					<td class="timetable__cell airplane"><span class="airplane__type">Airbus 321</span><span class="airplane__type_form_short">A321</span>
+					</td>
+					<td class="timetable__cell airport"><span class="airport__title">Москва</span><span class="airport__code">SVO</span>
+					</td>
+					<td class="timetable__cell time">23:21</td>
+					<td class="timetable__cell time">00:21</td>
+					<td class="timetable__cell status">Приземлился</td>
+					<td class="timetable__cell note">Совмещен с рейсом S7 611</td>
+				</tr>
+				<tr title="Нажмите, чтобы закрыть" class="timetable__row flight-details">
+					<td colspan="10" class="timetable__cell flight-details__wrapper">
+						<div class="flight-details__content">
+							<ul class="flight-details__list">
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Авиакомпания</h4><span class="flight-details__name">Аэрофлот</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Логотип авиакомпании</h4>
+									<img src="assets/images/logo-aeroflot.png" class="aircompany__logo" />
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Тип воздушного судна</h4><span class="flight-details__name">Airbus 321</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Аэропорт</h4><span class="flight-details__name">Москва</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Код аэропорта</h4><span class="flight-details__name">SVO</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время вылета</h4><span class="flight-details__name">23:21</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время прилета</h4><span class="flight-details__name">00:21</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Примечание</h4><span class="flight-details__name">Совмещен с рейсом S7 611</span>
+								</li>
+							</ul>
+						</div>
+					</td>
+				</tr>
+				<tr tabindex="0" class="timetable__row landing">
+					<td class="timetable__cell"><i class="flight-icon flight-icon_type_landing"></i>
+					</td>
+					<td class="timetable__cell flight-number">UT 489</td>
+					<td class="timetable__cell">
+						<img src="assets/images/logo-utair.png" class="aircompany__logo" />
+					</td>
+					<td class="timetable__cell aircompany-title">ЮТэйр</td>
+					<td class="timetable__cell airplane"><span class="airplane__type">Boing 735</span><span class="airplane__type_form_short">B735</span>
+					</td>
+					<td class="timetable__cell airport"><span class="airport__title">Москва</span><span class="airport__code">VKO</span>
+					</td>
+					<td class="timetable__cell time">00:08</td>
+					<td class="timetable__cell time">01:09</td>
+					<td class="timetable__cell status">Летит</td>
+					<td class="timetable__cell note">Совмещен с рейсом SU 001</td>
+				</tr>
+				<tr title="Нажмите, чтобы закрыть" class="timetable__row flight-details">
+					<td colspan="10" class="timetable__cell flight-details__wrapper">
+						<div class="flight-details__content">
+							<ul class="flight-details__list">
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Авиакомпания</h4><span class="flight-details__name">ЮТэйр</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Логотип авиакомпании</h4>
+									<img src="assets/images/logo-utair.png" class="aircompany__logo" />
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Тип воздушного судна</h4><span class="flight-details__name">Boing 735</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Аэропорт</h4><span class="flight-details__name">Москва</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Код аэропорта</h4><span class="flight-details__name">VKO</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время вылета</h4><span class="flight-details__name">00:08</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время прилета</h4><span class="flight-details__name">01:09</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Примечание</h4><span class="flight-details__name">Совмещен с рейсом SU 001</span>
+								</li>
+							</ul>
+						</div>
+					</td>
+				</tr>
+				<tr tabindex="0" class="timetable__row landing">
+					<td class="timetable__cell"><i class="flight-icon flight-icon_type_landing"></i>
+					</td>
+					<td class="timetable__cell flight-number">S7 037</td>
+					<td class="timetable__cell">
+						<img src="assets/images/logo-s7-airlines.png" class="aircompany__logo" />
+					</td>
+					<td class="timetable__cell aircompany-title">S7</td>
+					<td class="timetable__cell airplane"><span class="airplane__type">Airbus 319</span><span class="airplane__type_form_short">A319</span>
+					</td>
+					<td class="timetable__cell airport"><span class="airport__title">Москва</span><span class="airport__code">DME</span>
+					</td>
+					<td class="timetable__cell time">23:02</td>
+					<td class="timetable__cell time">01:44</td>
+					<td class="timetable__cell status">Задерживается до 04:00</td>
+					<td class="timetable__cell note">---</td>
+				</tr>
+				<tr title="Нажмите, чтобы закрыть" class="timetable__row flight-details">
+					<td colspan="10" class="timetable__cell flight-details__wrapper">
+						<div class="flight-details__content">
+							<ul class="flight-details__list">
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Авиакомпания</h4><span class="flight-details__name">S7</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Логотип авиакомпании</h4>
+									<img src="assets/images/logo-s7-airlines.png" class="aircompany__logo" />
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Тип воздушного судна</h4><span class="flight-details__name">Airbus 319</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Аэропорт</h4><span class="flight-details__name">Москва</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Код аэропорта</h4><span class="flight-details__name">DME</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время вылета</h4><span class="flight-details__name">23:02</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время прилета</h4><span class="flight-details__name">01:44</span>
+								</li>
+							</ul>
+						</div>
+					</td>
+				</tr>
+				<tr tabindex="0" class="timetable__row takeoff">
+					<td class="timetable__cell"><i class="flight-icon flight-icon_type_takeoff"></i>
+					</td>
+					<td class="timetable__cell flight-number">UN 467</td>
+					<td class="timetable__cell">
+						<img src="assets/images/logo-transaero.png" class="aircompany__logo" />
+					</td>
+					<td class="timetable__cell aircompany-title">Трансаэро</td>
+					<td class="timetable__cell airplane"><span class="airplane__type">Boing 763</span><span class="airplane__type_form_short">B763</span>
+					</td>
+					<td class="timetable__cell airport"><span class="airport__title">Ларнака</span>
+					</td>
+					<td class="timetable__cell time">04:00</td>
+					<td class="timetable__cell time">07:52</td>
+					<td class="timetable__cell status">Вылетел</td>
+					<td class="timetable__cell note">Совмещен с рейсом SU 003</td>
+				</tr>
+				<tr title="Нажмите, чтобы закрыть" class="timetable__row flight-details">
+					<td colspan="10" class="timetable__cell flight-details__wrapper">
+						<div class="flight-details__content">
+							<ul class="flight-details__list">
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Авиакомпания</h4><span class="flight-details__name">Трансаэро</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Логотип авиакомпании</h4>
+									<img src="assets/images/logo-transaero.png" class="aircompany__logo" />
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Тип воздушного судна</h4><span class="flight-details__name">Boing 763</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Аэропорт</h4><span class="flight-details__name">Ларнака</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время вылета</h4><span class="flight-details__name">04:00</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время прилета</h4><span class="flight-details__name">07:52</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Примечание</h4><span class="flight-details__name">Совмещен с рейсом SU 003</span>
+								</li>
+							</ul>
+						</div>
+					</td>
+				</tr>
+				<tr tabindex="0" class="timetable__row takeoff">
+					<td class="timetable__cell"><i class="flight-icon flight-icon_type_takeoff"></i>
+					</td>
+					<td class="timetable__cell flight-number">U6 513</td>
+					<td class="timetable__cell">
+						<img src="assets/images/logo-ural-airlines.png" class="aircompany__logo" />
+					</td>
+					<td class="timetable__cell aircompany-title">Уральские авиалинии</td>
+					<td class="timetable__cell airplane"><span class="airplane__type">Airbus 320</span><span class="airplane__type_form_short">A 320</span>
+					</td>
+					<td class="timetable__cell airport"><span class="airport__title">Симферополь</span>
+					</td>
+					<td class="timetable__cell time">04:32</td>
+					<td class="timetable__cell time">07:38</td>
+					<td class="timetable__cell status">Посадка закончена</td>
+					<td class="timetable__cell note">Совмещен с рейсом SU 027</td>
+				</tr>
+				<tr title="Нажмите, чтобы закрыть" class="timetable__row flight-details">
+					<td colspan="10" class="timetable__cell flight-details__wrapper">
+						<div class="flight-details__content">
+							<ul class="flight-details__list">
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Авиакомпания</h4><span class="flight-details__name">Уральские авиалинии</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Логотип авиакомпании</h4>
+									<img src="assets/images/logo-ural-airlines.png" class="aircompany__logo" />
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Тип воздушного судна</h4><span class="flight-details__name">Airbus 320</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Аэропорт</h4><span class="flight-details__name">Симферополь</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время вылета</h4><span class="flight-details__name">04:32</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время прилета</h4><span class="flight-details__name">07:38</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Примечание</h4><span class="flight-details__name">Совмещен с рейсом SU 027</span>
+								</li>
+							</ul>
+						</div>
+					</td>
+				</tr>
+				<tr tabindex="0" class="timetable__row takeoff">
+					<td class="timetable__cell"><i class="flight-icon flight-icon_type_takeoff"></i>
+					</td>
+					<td class="timetable__cell flight-number">AF 1153</td>
+					<td class="timetable__cell">
+						<img src="assets/images/logo-air-france.png" class="aircompany__logo" />
+					</td>
+					<td class="timetable__cell aircompany-title">Air France</td>
+					<td class="timetable__cell airplane"><span class="airplane__type">Airbus 319</span><span class="airplane__type_form_short">A319</span>
+					</td>
+					<td class="timetable__cell airport"><span class="airport__title">Париж</span><span class="airport__code">CDG</span>
+					</td>
+					<td class="timetable__cell time">06:15</td>
+					<td class="timetable__cell time">09:36</td>
+					<td class="timetable__cell status">Задерживается до 08:00</td>
+					<td class="timetable__cell note">Совмещен с рейсом SU 004</td>
+				</tr>
+				<tr title="Нажмите, чтобы закрыть" class="timetable__row flight-details">
+					<td colspan="10" class="timetable__cell flight-details__wrapper">
+						<div class="flight-details__content">
+							<ul class="flight-details__list">
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Авиакомпания</h4><span class="flight-details__name">Air France</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Логотип авиакомпании</h4>
+									<img src="assets/images/logo-air-france.png" class="aircompany__logo" />
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Тип воздушного судна</h4><span class="flight-details__name">Airbus 319</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Аэропорт</h4><span class="flight-details__name">Париж</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Код аэропорта</h4><span class="flight-details__name">CDG</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время вылета</h4><span class="flight-details__name">06:15</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время прилета</h4><span class="flight-details__name">09:36</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Примечание</h4><span class="flight-details__name">Совмещен с рейсом SU 004</span>
+								</li>
+							</ul>
+						</div>
+					</td>
+				</tr>
+				<tr tabindex="0" class="timetable__row takeoff">
+					<td class="timetable__cell"><i class="flight-icon flight-icon_type_takeoff"></i>
+					</td>
+					<td class="timetable__cell flight-number">UN 027</td>
+					<td class="timetable__cell">
+						<img src="assets/images/logo-transaero.png" class="aircompany__logo" />
+					</td>
+					<td class="timetable__cell aircompany-title">Трансаэро</td>
+					<td class="timetable__cell airplane"><span class="airplane__type">Boing 744</span><span class="airplane__type_form_short">B 744</span>
+					</td>
+					<td class="timetable__cell airport"><span class="airport__title">Москва</span><span class="airport__code">VKO</span>
+					</td>
+					<td class="timetable__cell time">07:57</td>
+					<td class="timetable__cell time">09:28</td>
+					<td class="timetable__cell status">Ожидание посадки</td>
+					<td class="timetable__cell note">---</td>
+				</tr>
+				<tr title="Нажмите, чтобы закрыть" class="timetable__row flight-details">
+					<td colspan="10" class="timetable__cell flight-details__wrapper">
+						<div class="flight-details__content">
+							<ul class="flight-details__list">
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Авиакомпания</h4><span class="flight-details__name">Трансаэро</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Логотип авиакомпании</h4>
+									<img src="assets/images/logo-transaero.png" class="aircompany__logo" />
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Тип воздушного судна</h4><span class="flight-details__name">Boing 744</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Аэропорт</h4><span class="flight-details__name">Москва</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Код аэропорта</h4><span class="flight-details__name">VKO</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время вылета</h4><span class="flight-details__name">07:57</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время прилета</h4><span class="flight-details__name">09:28</span>
+								</li>
+							</ul>
+						</div>
+					</td>
+				</tr>
+				<tr tabindex="0" class="timetable__row takeoff">
+					<td class="timetable__cell"><i class="flight-icon flight-icon_type_takeoff"></i>
+					</td>
+					<td class="timetable__cell flight-number">UN 9491</td>
+					<td class="timetable__cell">
+						<img src="assets/images/logo-transaero.png" class="aircompany__logo" />
+					</td>
+					<td class="timetable__cell aircompany-title">Трансаэро</td>
+					<td class="timetable__cell airplane"><span class="airplane__type">Boing 733</span><span class="airplane__type_form_short">B733</span>
+					</td>
+					<td class="timetable__cell airport"><span class="airport__title">Тиват</span>
+					</td>
+					<td class="timetable__cell time">06:48</td>
+					<td class="timetable__cell time">09:57</td>
+					<td class="timetable__cell status">Посадка закончена</td>
+					<td class="timetable__cell note">---</td>
+				</tr>
+				<tr title="Нажмите, чтобы закрыть" class="timetable__row flight-details">
+					<td colspan="10" class="timetable__cell flight-details__wrapper">
+						<div class="flight-details__content">
+							<ul class="flight-details__list">
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Авиакомпания</h4><span class="flight-details__name">Трансаэро</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Логотип авиакомпании</h4>
+									<img src="assets/images/logo-transaero.png" class="aircompany__logo" />
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Тип воздушного судна</h4><span class="flight-details__name">Boing 733</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Аэропорт</h4><span class="flight-details__name">Тиват</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время вылета</h4><span class="flight-details__name">06:48</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время прилета</h4><span class="flight-details__name">09:57</span>
+								</li>
+							</ul>
+						</div>
+					</td>
+				</tr>
+				<tr tabindex="0" class="timetable__row takeoff">
+					<td class="timetable__cell"><i class="flight-icon flight-icon_type_takeoff"></i>
+					</td>
+					<td class="timetable__cell flight-number">U6 3231</td>
+					<td class="timetable__cell">
+						<img src="assets/images/logo-ural-airlines.png" class="aircompany__logo" />
+					</td>
+					<td class="timetable__cell aircompany-title">Уральские авиалинии</td>
+					<td class="timetable__cell airplane"><span class="airplane__type">Airbus 321</span><span class="airplane__type_form_short">A321</span>
+					</td>
+					<td class="timetable__cell airport"><span class="airport__title">Анталья</span>
+					</td>
+					<td class="timetable__cell time">07:00</td>
+					<td class="timetable__cell time">10:33</td>
+					<td class="timetable__cell status">Ожидание посадки</td>
+					<td class="timetable__cell note">---</td>
+				</tr>
+				<tr title="Нажмите, чтобы закрыть" class="timetable__row flight-details">
+					<td colspan="10" class="timetable__cell flight-details__wrapper">
+						<div class="flight-details__content">
+							<ul class="flight-details__list">
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Авиакомпания</h4><span class="flight-details__name">Уральские авиалинии</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Логотип авиакомпании</h4>
+									<img src="assets/images/logo-ural-airlines.png" class="aircompany__logo" />
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Тип воздушного судна</h4><span class="flight-details__name">Airbus 321</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Аэропорт</h4><span class="flight-details__name">Анталья</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время вылета</h4><span class="flight-details__name">07:00</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время прилета</h4><span class="flight-details__name">10:33</span>
+								</li>
+							</ul>
+						</div>
+					</td>
+				</tr>
+				<tr tabindex="0" class="timetable__row landing">
+					<td class="timetable__cell"><i class="flight-icon flight-icon_type_landing"></i>
+					</td>
+					<td class="timetable__cell flight-number">SU 036</td>
+					<td class="timetable__cell">
+						<img src="assets/images/logo-aeroflot.png" class="aircompany__logo" />
+					</td>
+					<td class="timetable__cell aircompany-title">Аэрофлот</td>
+					<td class="timetable__cell airplane"><span class="airplane__type">Airbus 320</span><span class="airplane__type_form_short">A 320</span>
+					</td>
+					<td class="timetable__cell airport"><span class="airport__title">Москва</span><span class="airport__code"> SVO</span>
+					</td>
+					<td class="timetable__cell time">01:35</td>
+					<td class="timetable__cell time">02:28</td>
+					<td class="timetable__cell status">Вылетел</td>
+					<td class="timetable__cell note">---</td>
+				</tr>
+				<tr title="Нажмите, чтобы закрыть" class="timetable__row flight-details">
+					<td colspan="10" class="timetable__cell flight-details__wrapper">
+						<div class="flight-details__content">
+							<ul class="flight-details__list">
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Авиакомпания</h4><span class="flight-details__name">Аэрофлот</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Логотип авиакомпании</h4>
+									<img src="assets/images/logo-aeroflot.png" class="aircompany__logo" />
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Тип воздушного судна</h4><span class="flight-details__name">Airbus 320</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Аэропорт</h4><span class="flight-details__name">Москва</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Код аэропорта</h4><span class="flight-details__name"> SVO</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время вылета</h4><span class="flight-details__name">01:35</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время прилета</h4><span class="flight-details__name">02:28</span>
+								</li>
+							</ul>
+						</div>
+					</td>
+				</tr>
+				<tr tabindex="0" class="timetable__row landing">
+					<td class="timetable__cell"><i class="flight-icon flight-icon_type_landing"></i>
+					</td>
+					<td class="timetable__cell flight-number">UN 9480</td>
+					<td class="timetable__cell">
+						<img src="assets/images/logo-transaero.png" class="aircompany__logo" />
+					</td>
+					<td class="timetable__cell aircompany-title">Трансаэро</td>
+					<td class="timetable__cell airplane"><span class="airplane__type">Boing 763</span><span class="airplane__type_form_short">B763</span>
+					</td>
+					<td class="timetable__cell airport"><span class="airport__title">Хургада</span>
+					</td>
+					<td class="timetable__cell time">22:57</td>
+					<td class="timetable__cell time">04:14</td>
+					<td class="timetable__cell status">Вылетел</td>
+					<td class="timetable__cell note">---</td>
+				</tr>
+				<tr title="Нажмите, чтобы закрыть" class="timetable__row flight-details">
+					<td colspan="10" class="timetable__cell flight-details__wrapper">
+						<div class="flight-details__content">
+							<ul class="flight-details__list">
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Авиакомпания</h4><span class="flight-details__name">Трансаэро</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Логотип авиакомпании</h4>
+									<img src="assets/images/logo-transaero.png" class="aircompany__logo" />
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Тип воздушного судна</h4><span class="flight-details__name">Boing 763</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Аэропорт</h4><span class="flight-details__name">Хургада</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время вылета</h4><span class="flight-details__name">22:57</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время прилета</h4><span class="flight-details__name">04:14</span>
+								</li>
+							</ul>
+						</div>
+					</td>
+				</tr>
+				<tr tabindex="0" class="timetable__row landing">
+					<td class="timetable__cell"><i class="flight-icon flight-icon_type_landing"></i>
+					</td>
+					<td class="timetable__cell flight-number">UN 9460A</td>
+					<td class="timetable__cell">
+						<img src="assets/images/logo-transaero.png" class="aircompany__logo" />
+					</td>
+					<td class="timetable__cell aircompany-title">Трансаэро</td>
+					<td class="timetable__cell airplane"><span class="airplane__type">Boing 763</span><span class="airplane__type_form_short">B763</span>
+					</td>
+					<td class="timetable__cell airport"><span class="airport__title">Анталья</span>
+					</td>
+					<td class="timetable__cell time">23:45</td>
+					<td class="timetable__cell time">03:42</td>
+					<td class="timetable__cell status">Вылетел</td>
+					<td class="timetable__cell note">---</td>
+				</tr>
+				<tr title="Нажмите, чтобы закрыть" class="timetable__row flight-details">
+					<td colspan="10" class="timetable__cell flight-details__wrapper">
+						<div class="flight-details__content">
+							<ul class="flight-details__list">
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Авиакомпания</h4><span class="flight-details__name">Трансаэро</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Логотип авиакомпании</h4>
+									<img src="assets/images/logo-transaero.png" class="aircompany__logo" />
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Тип воздушного судна</h4><span class="flight-details__name">Boing 763</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Аэропорт</h4><span class="flight-details__name">Анталья</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время вылета</h4><span class="flight-details__name">23:45</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время прилета</h4><span class="flight-details__name">03:42</span>
+								</li>
+							</ul>
+						</div>
+					</td>
+				</tr>
+				<tr tabindex="0" class="timetable__row takeoff">
+					<td class="timetable__cell"><i class="flight-icon flight-icon_type_takeoff"></i>
+					</td>
+					<td class="timetable__cell flight-number">SU 007</td>
+					<td class="timetable__cell">
+						<img src="assets/images/logo-aeroflot.png" class="aircompany__logo" />
+					</td>
+					<td class="timetable__cell aircompany-title">Аэрофлот</td>
+					<td class="timetable__cell airplane"><span class="airplane__type">Airbus 321</span><span class="airplane__type_form_short">A321</span>
+					</td>
+					<td class="timetable__cell airport"><span class="airport__title">Москва</span><span class="airport__code">SVO</span>
+					</td>
+					<td class="timetable__cell time">09:22</td>
+					<td class="timetable__cell time">10:24</td>
+					<td class="timetable__cell status">Отменён</td>
+					<td class="timetable__cell note">Совмещен с рейсом UT 002</td>
+				</tr>
+				<tr title="Нажмите, чтобы закрыть" class="timetable__row flight-details">
+					<td colspan="10" class="timetable__cell flight-details__wrapper">
+						<div class="flight-details__content">
+							<ul class="flight-details__list">
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Авиакомпания</h4><span class="flight-details__name">Аэрофлот</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Логотип авиакомпании</h4>
+									<img src="assets/images/logo-aeroflot.png" class="aircompany__logo" />
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Тип воздушного судна</h4><span class="flight-details__name">Airbus 321</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Аэропорт</h4><span class="flight-details__name">Москва</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Код аэропорта</h4><span class="flight-details__name">SVO</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время вылета</h4><span class="flight-details__name">09:22</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время прилета</h4><span class="flight-details__name">10:24</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Примечание</h4><span class="flight-details__name">Совмещен с рейсом UT 002</span>
+								</li>
+							</ul>
+						</div>
+					</td>
+				</tr>
+				<tr tabindex="0" class="timetable__row takeoff">
+					<td class="timetable__cell"><i class="flight-icon flight-icon_type_takeoff"></i>
+					</td>
+					<td class="timetable__cell flight-number">SU 007</td>
+					<td class="timetable__cell">
+						<img src="assets/images/logo-s7-airlines.png" class="aircompany__logo" />
+					</td>
+					<td class="timetable__cell aircompany-title">S7</td>
+					<td class="timetable__cell airplane"><span class="airplane__type">Airbus 319</span><span class="airplane__type_form_short">A319</span>
+					</td>
+					<td class="timetable__cell airport"><span class="airport__title">Москва</span><span class="airport__code">DME</span>
+					</td>
+					<td class="timetable__cell time">10:43</td>
+					<td class="timetable__cell time">12:08</td>
+					<td class="timetable__cell status">Отменен</td>
+					<td class="timetable__cell note">Совмещен с рейсом SU 010</td>
+				</tr>
+				<tr title="Нажмите, чтобы закрыть" class="timetable__row flight-details">
+					<td colspan="10" class="timetable__cell flight-details__wrapper">
+						<div class="flight-details__content">
+							<ul class="flight-details__list">
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Авиакомпания</h4><span class="flight-details__name">S7</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Логотип авиакомпании</h4>
+									<img src="assets/images/logo-s7-airlines.png" class="aircompany__logo" />
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Тип воздушного судна</h4><span class="flight-details__name">Airbus 319</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Аэропорт</h4><span class="flight-details__name">Москва</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Код аэропорта</h4><span class="flight-details__name">DME</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время вылета</h4><span class="flight-details__name">10:43</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время прилета</h4><span class="flight-details__name">12:08</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Примечание</h4><span class="flight-details__name">Совмещен с рейсом SU 010</span>
+								</li>
+							</ul>
+						</div>
+					</td>
+				</tr>
+				<tr tabindex="0" class="timetable__row takeoff">
+					<td class="timetable__cell"><i class="flight-icon flight-icon_type_takeoff"></i>
+					</td>
+					<td class="timetable__cell flight-number">UT 475</td>
+					<td class="timetable__cell">
+						<img src="assets/images/logo-utair.png" class="aircompany__logo" />
+					</td>
+					<td class="timetable__cell aircompany-title">ЮТэйр</td>
+					<td class="timetable__cell airplane"><span class="airplane__type">Boing 735</span><span class="airplane__type_form_short">B735</span>
+					</td>
+					<td class="timetable__cell airport"><span class="airport__title">Томск</span><span class="airport__code">DME</span>
+					</td>
+					<td class="timetable__cell time">10:13</td>
+					<td class="timetable__cell time">14:19</td>
+					<td class="timetable__cell status">Регистрация</td>
+					<td class="timetable__cell note">---</td>
+				</tr>
+				<tr title="Нажмите, чтобы закрыть" class="timetable__row flight-details">
+					<td colspan="10" class="timetable__cell flight-details__wrapper">
+						<div class="flight-details__content">
+							<ul class="flight-details__list">
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Авиакомпания</h4><span class="flight-details__name">ЮТэйр</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Логотип авиакомпании</h4>
+									<img src="assets/images/logo-utair.png" class="aircompany__logo" />
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Тип воздушного судна</h4><span class="flight-details__name">Boing 735</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Аэропорт</h4><span class="flight-details__name">Томск</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Код аэропорта</h4><span class="flight-details__name">DME</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время вылета</h4><span class="flight-details__name">10:13</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время прилета</h4><span class="flight-details__name">14:19</span>
+								</li>
+							</ul>
+						</div>
+					</td>
+				</tr>
+				<tr tabindex="0" class="timetable__row landing">
+					<td class="timetable__cell"><i class="flight-icon flight-icon_type_landing"></i>
+					</td>
+					<td class="timetable__cell flight-number">UN 9400</td>
+					<td class="timetable__cell">
+						<img src="assets/images/logo-transaero.png" class="aircompany__logo" />
+					</td>
+					<td class="timetable__cell aircompany-title">Трансаэро</td>
+					<td class="timetable__cell airplane"><span class="airplane__type">Boing 733</span><span class="airplane__type_form_short">B 733</span>
+					</td>
+					<td class="timetable__cell airport"><span class="airport__title">Санторини</span><span class="airport__code">SNT</span>
+					</td>
+					<td class="timetable__cell time">22:30</td>
+					<td class="timetable__cell time">01:57</td>
+					<td class="timetable__cell status">Приземлился</td>
+					<td class="timetable__cell note">Совмещен с рейсом SU 010</td>
+				</tr>
+				<tr title="Нажмите, чтобы закрыть" class="timetable__row flight-details">
+					<td colspan="10" class="timetable__cell flight-details__wrapper">
+						<div class="flight-details__content">
+							<ul class="flight-details__list">
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Авиакомпания</h4><span class="flight-details__name">Трансаэро</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Логотип авиакомпании</h4>
+									<img src="assets/images/logo-transaero.png" class="aircompany__logo" />
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Тип воздушного судна</h4><span class="flight-details__name">Boing 733</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Аэропорт</h4><span class="flight-details__name">Санторини</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Код аэропорта</h4><span class="flight-details__name">SNT</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время вылета</h4><span class="flight-details__name">22:30</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время прилета</h4><span class="flight-details__name">01:57</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Примечание</h4><span class="flight-details__name">Совмещен с рейсом SU 010</span>
+								</li>
+							</ul>
+						</div>
+					</td>
+				</tr>
+				<tr tabindex="0" class="timetable__row landing">
+					<td class="timetable__cell"><i class="flight-icon flight-icon_type_landing"></i>
+					</td>
+					<td class="timetable__cell flight-number">U6 888</td>
+					<td class="timetable__cell">
+						<img src="assets/images/logo-ural-airlines.png" class="aircompany__logo" />
+					</td>
+					<td class="timetable__cell aircompany-title">Уральские авиалинии</td>
+					<td class="timetable__cell airplane"><span class="airplane__type">Airbus 321</span><span class="airplane__type_form_short">A321</span>
+					</td>
+					<td class="timetable__cell airport"><span class="airport__title">Сочи</span>
+					</td>
+					<td class="timetable__cell time">23:30</td>
+					<td class="timetable__cell time">02:11</td>
+					<td class="timetable__cell status">Отменён</td>
+					<td class="timetable__cell note">---</td>
+				</tr>
+				<tr title="Нажмите, чтобы закрыть" class="timetable__row flight-details">
+					<td colspan="10" class="timetable__cell flight-details__wrapper">
+						<div class="flight-details__content">
+							<ul class="flight-details__list">
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Авиакомпания</h4><span class="flight-details__name">Уральские авиалинии</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Логотип авиакомпании</h4>
+									<img src="assets/images/logo-ural-airlines.png" class="aircompany__logo" />
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Тип воздушного судна</h4><span class="flight-details__name">Airbus 321</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Аэропорт</h4><span class="flight-details__name">Сочи</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время вылета</h4><span class="flight-details__name">23:30</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время прилета</h4><span class="flight-details__name">02:11</span>
+								</li>
+							</ul>
+						</div>
+					</td>
+				</tr>
+				<tr tabindex="0" class="timetable__row landing">
+					<td class="timetable__cell"><i class="flight-icon flight-icon_type_landing"></i>
+					</td>
+					<td class="timetable__cell flight-number">SU 078</td>
+					<td class="timetable__cell">
+						<img src="assets/images/logo-aeroflot.png" class="aircompany__logo" />
+					</td>
+					<td class="timetable__cell aircompany-title">Аэрофлот</td>
+					<td class="timetable__cell airplane"><span class="airplane__type">Airbus 321</span><span class="airplane__type_form_short">A321</span>
+					</td>
+					<td class="timetable__cell airport"><span class="airport__title">Ульяновск</span><span class="airport__code">ULC</span>
+					</td>
+					<td class="timetable__cell time">01:00</td>
+					<td class="timetable__cell time">02:45</td>
+					<td class="timetable__cell status">По расписанию</td>
+					<td class="timetable__cell note">Совмещен с рейсом S7 111</td>
+				</tr>
+				<tr title="Нажмите, чтобы закрыть" class="timetable__row flight-details">
+					<td colspan="10" class="timetable__cell flight-details__wrapper">
+						<div class="flight-details__content">
+							<ul class="flight-details__list">
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Авиакомпания</h4><span class="flight-details__name">Аэрофлот</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Логотип авиакомпании</h4>
+									<img src="assets/images/logo-aeroflot.png" class="aircompany__logo" />
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Тип воздушного судна</h4><span class="flight-details__name">Airbus 321</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Аэропорт</h4><span class="flight-details__name">Ульяновск</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Код аэропорта</h4><span class="flight-details__name">ULC</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время вылета</h4><span class="flight-details__name">01:00</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время прилета</h4><span class="flight-details__name">02:45</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Примечание</h4><span class="flight-details__name">Совмещен с рейсом S7 111</span>
+								</li>
+							</ul>
+						</div>
+					</td>
+				</tr>
+				<tr tabindex="0" class="timetable__row landing">
+					<td class="timetable__cell"><i class="flight-icon flight-icon_type_landing"></i>
+					</td>
+					<td class="timetable__cell flight-number">UT 900</td>
+					<td class="timetable__cell">
+						<img src="assets/images/logo-utair.png" class="aircompany__logo" />
+					</td>
+					<td class="timetable__cell aircompany-title">ЮТэйр</td>
+					<td class="timetable__cell airplane"><span class="airplane__type">Boing 735</span><span class="airplane__type_form_short">B735</span>
+					</td>
+					<td class="timetable__cell airport"><span class="airport__title">Москва</span><span class="airport__code">VKO</span>
+					</td>
+					<td class="timetable__cell time">01:08</td>
+					<td class="timetable__cell time">02:19</td>
+					<td class="timetable__cell status">По расписанию</td>
+					<td class="timetable__cell note">Совмещен с рейсом SU 015</td>
+				</tr>
+				<tr title="Нажмите, чтобы закрыть" class="timetable__row flight-details">
+					<td colspan="10" class="timetable__cell flight-details__wrapper">
+						<div class="flight-details__content">
+							<ul class="flight-details__list">
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Авиакомпания</h4><span class="flight-details__name">ЮТэйр</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Логотип авиакомпании</h4>
+									<img src="assets/images/logo-utair.png" class="aircompany__logo" />
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Тип воздушного судна</h4><span class="flight-details__name">Boing 735</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Аэропорт</h4><span class="flight-details__name">Москва</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Код аэропорта</h4><span class="flight-details__name">VKO</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время вылета</h4><span class="flight-details__name">01:08</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время прилета</h4><span class="flight-details__name">02:19</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Примечание</h4><span class="flight-details__name">Совмещен с рейсом SU 015</span>
+								</li>
+							</ul>
+						</div>
+					</td>
+				</tr>
+				<tr tabindex="0" class="timetable__row landing">
+					<td class="timetable__cell"><i class="flight-icon flight-icon_type_landing"></i>
+					</td>
+					<td class="timetable__cell flight-number">S7 091</td>
+					<td class="timetable__cell">
+						<img src="assets/images/logo-s7-airlines.png" class="aircompany__logo" />
+					</td>
+					<td class="timetable__cell aircompany-title">S7</td>
+					<td class="timetable__cell airplane"><span class="airplane__type">Airbus 319</span><span class="airplane__type_form_short">A319</span>
+					</td>
+					<td class="timetable__cell airport"><span class="airport__title">Москва</span><span class="airport__code">DME</span>
+					</td>
+					<td class="timetable__cell time">23:58</td>
+					<td class="timetable__cell time">02:30</td>
+					<td class="timetable__cell status">Задерживается до 03:00</td>
+					<td class="timetable__cell note">Совмещен с рейсом SU 020</td>
+				</tr>
+				<tr title="Нажмите, чтобы закрыть" class="timetable__row flight-details">
+					<td colspan="10" class="timetable__cell flight-details__wrapper">
+						<div class="flight-details__content">
+							<ul class="flight-details__list">
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Авиакомпания</h4><span class="flight-details__name">S7</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Логотип авиакомпании</h4>
+									<img src="assets/images/logo-s7-airlines.png" class="aircompany__logo" />
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Тип воздушного судна</h4><span class="flight-details__name">Airbus 319</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Аэропорт</h4><span class="flight-details__name">Москва</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Код аэропорта</h4><span class="flight-details__name">DME</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время вылета</h4><span class="flight-details__name">23:58</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время прилета</h4><span class="flight-details__name">02:30</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Примечание</h4><span class="flight-details__name">Совмещен с рейсом SU 020</span>
+								</li>
+							</ul>
+						</div>
+					</td>
+				</tr>
+				<tr tabindex="0" class="timetable__row takeoff">
+					<td class="timetable__cell"><i class="flight-icon flight-icon_type_takeoff"></i>
+					</td>
+					<td class="timetable__cell flight-number">UN 345</td>
+					<td class="timetable__cell">
+						<img src="assets/images/logo-transaero.png" class="aircompany__logo" />
+					</td>
+					<td class="timetable__cell aircompany-title">Трансаэро</td>
+					<td class="timetable__cell airplane"><span class="airplane__type">Boing 763</span><span class="airplane__type_form_short">B763</span>
+					</td>
+					<td class="timetable__cell airport"><span class="airport__title">Прага</span><span class="airport__code">PRG</span>
+					</td>
+					<td class="timetable__cell time">04:00</td>
+					<td class="timetable__cell time">09:52</td>
+					<td class="timetable__cell status">Вылетел</td>
+					<td class="timetable__cell note">---</td>
+				</tr>
+				<tr title="Нажмите, чтобы закрыть" class="timetable__row flight-details">
+					<td colspan="10" class="timetable__cell flight-details__wrapper">
+						<div class="flight-details__content">
+							<ul class="flight-details__list">
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Авиакомпания</h4><span class="flight-details__name">Трансаэро</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Логотип авиакомпании</h4>
+									<img src="assets/images/logo-transaero.png" class="aircompany__logo" />
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Тип воздушного судна</h4><span class="flight-details__name">Boing 763</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Аэропорт</h4><span class="flight-details__name">Прага</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Код аэропорта</h4><span class="flight-details__name">PRG</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время вылета</h4><span class="flight-details__name">04:00</span>
+								</li>
+								<li class="flight-details__item">
+									<h4 class="flight-details__heading">Время прилета</h4><span class="flight-details__name">09:52</span>
+								</li>
+							</ul>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="message">Для отображения рейсов используйте галочки</div>
+		<script src="/assets/scripts/common.min.js?1437250158028"></script>
+	</body>
+
+</html>
