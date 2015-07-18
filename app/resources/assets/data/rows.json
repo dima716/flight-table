@@ -16,19 +16,6 @@
 		}
 	},
 	{
-		"type": "flight-details",
-		"flightDetails": [
-			{
-				"key": "Самолет",
-				"value": "Boing 733"
-			},
-			{
-				"key": "Авиакомпания",
-				"value": "Трансаэро"
-			}
-		]
-	},
-	{
 		"type": "landing",
 		"columns": {
 			"flightType": "flight-icon_type_landing",
@@ -43,19 +30,6 @@
 			"status": "Летит",
 			"note": "---"
 		}
-	},
-	{
-		"type": "flight-details",
-		"flightDetails": [
-			{
-				"key": "Самолет",
-				"value": "Airbus 321"
-			},
-			{
-				"key": "Авиакомпания",
-				"value": "Уральские авиалинии"
-			}
-		]
 	},
 	{
 		"type": "landing",
@@ -75,23 +49,6 @@
 		}
 	},
 	{
-		"type": "flight-details",
-		"flightDetails": [
-			{
-				"key": "Самолет",
-				"value": "Airbus 321"
-			},
-			{
-				"key": "Авиакомпания",
-				"value": "Aeroflot"
-			},
-			{
-				"key": "Код аэропорта",
-				"value": "SVO"
-			}
-		]
-	},
-	{
 		"type": "landing",
 		"columns": {
 			"flightType": "flight-icon_type_landing",
@@ -107,23 +64,6 @@
 			"status": "Летит",
 			"note": "Совмещен с рейсом SU 001"
 		}
-	},
-	{
-		"type": "flight-details",
-		"flightDetails": [
-			{
-				"key": "Самолет",
-				"value": "Boing 735"
-			},
-			{
-				"key": "Авиакомпания",
-				"value": "ЮТэйр"
-			},
-			{
-				"key": "Код аэропорта",
-				"value": "VKO"
-			}
-		]
 	},
 	{
 		"type": "landing",
@@ -143,23 +83,6 @@
 		}
 	},
 	{
-		"type": "flight-details",
-		"flightDetails": [
-			{
-				"key": "Самолет",
-				"value": "Airbus 319"
-			},
-			{
-				"key": "Авиакомпания",
-				"value": "S7"
-			},
-			{
-				"key": "Код аэропорта",
-				"value": "DME"
-			}
-		]
-	},
-	{
 		"type": "takeoff",
 		"columns": {
 			"flightType": "flight-icon_type_takeoff",
@@ -176,19 +99,6 @@
 		}
 	},
 	{
-		"type": "flight-details",
-		"flightDetails": [
-			{
-				"key": "Самолет",
-				"value": "Boing 763"
-			},
-			{
-				"key": "Авиакомпания",
-				"value": "Трансаэро"
-			}
-		]
-	},
-	{
 		"type": "takeoff",
 		"columns": {
 			"flightType": "flight-icon_type_takeoff",
@@ -203,19 +113,6 @@
 			"status": "Посадка закончена",
 			"note": "Совмещен с рейсом SU 027"
 		}
-	},
-	{
-		"type": "flight-details",
-		"flightDetails": [
-			{
-				"key": "Самолет",
-				"value": "Airbus 320"
-			},
-			{
-				"key": "Авиакомпания",
-				"value": "Уральские авиалинии"
-			}
-		]
 	},
 	{
 		"type": "takeoff",
@@ -235,23 +132,6 @@
 		}
 	},
 	{
-		"type": "flight-details",
-		"flightDetails": [
-			{
-				"key": "Самолет",
-				"value": "Airbus 319"
-			},
-			{
-				"key": "Авиакомпания",
-				"value": "Air France"
-			},
-			{
-				"key": "Код аэропорта",
-				"value": "CDG"
-			}
-		]
-	},
-	{
 		"type": "takeoff",
 		"columns": {
 			"flightType": "flight-icon_type_takeoff",
@@ -267,23 +147,6 @@
 			"status": "Ожидание посадки",
 			"note": "---"
 		}
-	},
-	{
-		"type": "flight-details",
-		"flightDetails": [
-			{
-				"key": "Самолет",
-				"value": "Boing 744"
-			},
-			{
-				"key": "Авиакомпания",
-				"value": "Трансаэро"
-			},
-			{
-				"key": "Код аэропорта",
-				"value": "VKO"
-			}
-		]
 	},
 	{
 		"type": "takeoff",
@@ -302,19 +165,6 @@
 		}
 	},
 	{
-		"type": "flight-details",
-		"flightDetails": [
-			{
-				"key": "Самолет",
-				"value": "Boing 733"
-			},
-			{
-				"key": "Авиакомпания",
-				"value": "Трансаэро"
-			}
-		]
-	},
-	{
 		"type": "takeoff",
 		"columns": {
 			"flightType": "flight-icon_type_takeoff",
@@ -329,19 +179,6 @@
 			"status": "Ожидание посадки",
 			"note": "---"
 		}
-	},
-	{
-		"type": "flight-details",
-		"flightDetails": [
-			{
-				"key": "Самолет",
-				"value": "Airbus 321"
-			},
-			{
-				"key": "Авиакомпания",
-				"value": "Уральские авиалинии"
-			}
-		]
 	},
 	{
 		"type": "landing",
@@ -361,23 +198,6 @@
 		}
 	},
 	{
-		"type": "flight-details",
-		"flightDetails": [
-			{
-				"key": "Самолет",
-				"value": "Airbus 320"
-			},
-			{
-				"key": "Авиакомпания",
-				"value": "Аэрофлот"
-			},
-			{
-				"key": "Код аэропорта",
-				"value": "SVO"
-			}
-		]
-	},
-	{
 		"type": "landing",
 		"columns": {
 			"flightType": "flight-icon_type_landing",
@@ -394,19 +214,6 @@
 		}
 	},
 	{
-		"type": "flight-details",
-		"flightDetails": [
-			{
-				"key": "Самолет",
-				"value": "Boing 763"
-			},
-			{
-				"key": "Авиакомпания",
-				"value": "Трансаэро"
-			}
-		]
-	},
-	{
 		"type": "landing",
 		"columns": {
 			"flightType": "flight-icon_type_landing",
@@ -421,19 +228,6 @@
 			"status": "Вылетел",
 			"note": "---"
 		}
-	},
-	{
-		"type": "flight-details",
-		"flightDetails": [
-			{
-				"key": "Самолет",
-				"value": "Boing 763"
-			},
-			{
-				"key": "Авиакомпания",
-				"value": "Трансаэро"
-			}
-		]
 	},
 	{
 		"type": "takeoff",
@@ -453,23 +247,6 @@
 		}
 	},
 	{
-		"type": "flight-details",
-		"flightDetails": [
-			{
-				"key": "Самолет",
-				"value": "Airbus 321"
-			},
-			{
-				"key": "Авиакомпания",
-				"value": "Аэрофлот"
-			},
-			{
-				"key": "Код аэропорта",
-				"value": "SVO"
-			}
-		]
-	},
-	{
 		"type": "takeoff",
 		"columns": {
 			"flightType": "flight-icon_type_takeoff",
@@ -485,23 +262,6 @@
 			"status": "Отменен",
 			"note": "Совмещен с рейсом SU 010"
 		}
-	},
-	{
-		"type": "flight-details",
-		"flightDetails": [
-			{
-				"key": "Самолет",
-				"value": "Airbus 319"
-			},
-			{
-				"key": "Авиакомпания",
-				"value": "S7"
-			},
-			{
-				"key": "Код аэропорта",
-				"value": "DME"
-			}
-		]
 	},
 	{
 		"type": "takeoff",
@@ -521,19 +281,6 @@
 		}
 	},
 	{
-		"type": "flight-details",
-		"flightDetails": [
-			{
-				"key": "Самолет",
-				"value": "Boing 735"
-			},
-			{
-				"key": "Авиакомпания",
-				"value": "ЮТэйр"
-			}
-		]
-	},
-	{
 		"type": "landing",
 		"columns": {
 			"flightType": "flight-icon_type_landing",
@@ -551,23 +298,6 @@
 		}
 	},
 	{
-		"type": "flight-details",
-		"flightDetails": [
-			{
-				"key": "Самолет",
-				"value": "Boing 733"
-			},
-			{
-				"key": "Авиакомпания",
-				"value": "Трансаэро"
-			},
-			{
-				"key": "Код аэропорта",
-				"value": "SNT"
-			}
-		]
-	},
-	{
 		"type": "landing",
 		"columns": {
 			"flightType": "flight-icon_type_landing",
@@ -582,19 +312,6 @@
 			"status": "Отменён",
 			"note": "---"
 		}
-	},
-	{
-		"type": "flight-details",
-		"flightDetails": [
-			{
-				"key": "Самолет",
-				"value": "Airbus 321"
-			},
-			{
-				"key": "Авиакомпания",
-				"value": "Уральские авиалинии"
-			}
-		]
 	},
 	{
 		"type": "landing",
@@ -614,23 +331,6 @@
 		}
 	},
 	{
-		"type": "flight-details",
-		"flightDetails": [
-			{
-				"key": "Самолет",
-				"value": "Airbus 321"
-			},
-			{
-				"key": "Авиакомпания",
-				"value": "Aeroflot"
-			},
-			{
-				"key": "Код аэропорта",
-				"value": "ULC"
-			}
-		]
-	},
-	{
 		"type": "landing",
 		"columns": {
 			"flightType": "flight-icon_type_landing",
@@ -646,23 +346,6 @@
 			"status": "По расписанию",
 			"note": "Совмещен с рейсом SU 015"
 		}
-	},
-	{
-		"type": "flight-details",
-		"flightDetails": [
-			{
-				"key": "Самолет",
-				"value": "Boing 735"
-			},
-			{
-				"key": "Авиакомпания",
-				"value": "ЮТэйр"
-			},
-			{
-				"key": "Код аэропорта",
-				"value": "VKO"
-			}
-		]
 	},
 	{
 		"type": "landing",
@@ -682,23 +365,6 @@
 		}
 	},
 	{
-		"type": "flight-details",
-		"flightDetails": [
-			{
-				"key": "Самолет",
-				"value": "Airbus 319"
-			},
-			{
-				"key": "Авиакомпания",
-				"value": "S7"
-			},
-			{
-				"key": "Код аэропорта",
-				"value": "DME"
-			}
-		]
-	},
-	{
 		"type": "takeoff",
 		"columns": {
 			"flightType": "flight-icon_type_takeoff",
@@ -714,22 +380,6 @@
 			"status": "Вылетел",
 			"note": "---"
 		}
-	},
-	{
-		"type": "flight-details",
-		"flightDetails": [
-			{
-				"key": "Самолет",
-				"value": "Boing 763"
-			},
-			{
-				"key": "Авиакомпания",
-				"value": "Трансаэро"
-			},
-			{
-				"key": "Код аэропорта",
-				"value": "PRG"
-			}
-		]
 	}
 ]
+

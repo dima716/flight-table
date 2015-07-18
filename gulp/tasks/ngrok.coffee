@@ -8,6 +8,6 @@ gulp.task 'ngrok', ->
 	ngrok.connect port, (err, url) ->
 		gutil.log [
 				'[ngrok] '.bold.green,
-				url.bold.magenta.underline,
+				url,
 				' -> 127.0.0.1:' + port
 			].join ''

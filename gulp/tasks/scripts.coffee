@@ -9,8 +9,7 @@ paths        = require '../paths'
 
 gulp.task 'scripts', ->
 	gulp.src [
-			'components/jquery/dist/jquery.min.js'
-			'components/svg4everybody/svg4everybody.min.js'
+			'components/jquery/dist/jquery.min.js',
 			'app/scripts/common.js'
 		]
 		.pipe plumber errorHandler: errorHandler

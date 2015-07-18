@@ -1,13 +1,5 @@
-mixin flightDetails(flightDetails)
-	ul(class="flight-details__list")
-		each item in flightDetails
-			li(class="flight-details__item")
-				h4(class="flight-details__heading")=item.key
-				span(class="flight-details__name")=item.value
-
 mixin rows(rows)
 	each row in rows
-		if row.type == "landing" || row.type == "takeoff"
 			tr(class="timetable__row " + row.type, tabindex="0")
 				td(class="timetable__cell")
 					i(class="flight-icon " + row.columns.flightType)
@@ -26,8 +18,34 @@ mixin rows(rows)
 				td(class="timetable__cell time")=row.columns.arrivalTime
 				td(class="timetable__cell status")=row.columns.status
 				td(class="timetable__cell note")=row.columns.note
-		if row.type == "flight-details"
-			tr(class="timetable__row " + row.type, title="Нажмите, чтобы закрыть")
+			tr(class="timetable__row flight-details" title="Нажмите, чтобы закрыть")
 				td(class="timetable__cell flight-details__wrapper", colspan="10")
 					div(class="flight-details__content")
-						+flightDetails(row.flightDetails)
+						ul(class="flight-details__list")
+							li(class="flight-details__item")
+								h4(class="flight-details__heading") Авиакомпания
+								span(class="flight-details__name")=row.columns.aircompanyTitle
+							li(class="flight-details__item")
+								h4(class="flight-details__heading") Логотип авиакомпании
+								img(class="aircompany__logo", src="#{row.columns.aircompanyLogo}")
+							li(class="flight-details__item")
+								h4(class="flight-details__heading") Тип воздушного судна
+								span(class="flight-details__name")=row.columns.airplaneType
+							li(class="flight-details__item")
+								h4(class="flight-details__heading") Аэропорт
+								span(class="flight-details__name")=row.columns.airportTitle
+							if row.columns.airportCode
+								li(class="flight-details__item")
+									h4(class="flight-details__heading") Код аэропорта
+									span(class="flight-details__name")=row.columns.airportCode
+							li(class="flight-details__item")
+								h4(class="flight-details__heading") Время вылета
+								span(class="flight-details__name")=row.columns.departureTime
+							li(class="flight-details__item")
+								h4(class="flight-details__heading") Время прилета
+								span(class="flight-details__name")=row.columns.arrivalTime
+							if !(row.columns.note == "---")
+								li(class="flight-details__item")
+									h4(class="flight-details__heading") Примечание
+									span(class="flight-details__name")=row.columns.note
+
