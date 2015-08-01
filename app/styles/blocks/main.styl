@@ -4,7 +4,7 @@
 	text-align center
 	margin auto
 	overflow hidden
-	border-bottom 1px solid #ddd
+	border-bottom 1px solid $table-border-color
 	padding 5px
 
 	&_fixed
@@ -12,7 +12,6 @@
 		position fixed
 		width auto
 		display none
-		background-color white
 		z-index 1
 
 	&__row
@@ -31,11 +30,11 @@
 			left 0
 			width 100%
 			height 100%
-			background-color #f9f9f9
+			background-color $table-odd-row-color
 			z-index -2
 
 		& > .timetable__row:not(.flight-details):hover
-			background-color #ffa
+			background-color $table-cell-hover-color
 
 		& > .timetable__row:not(.flight-details) > .timetable__cell:hover:before
 			content ""
@@ -44,12 +43,12 @@
 			height 10000px
 			top -5000px
 			left 0
-			background-color #ffa
+			background-color $table-cell-hover-color
 			z-index -1
 
 		+to-width(801px)
 			& > .timetable__row:focus + .flight-details .flight-details__wrapper
-				border: 1px solid #ddd
+				border: 1px solid $table-border-color
 
 			& > .timetable__row:focus + .flight-details .flight-details__content
 				opacity 1
@@ -59,12 +58,12 @@
 	&__cell
 		position relative
 		padding 5px
-		border 1px solid #ddd
+		border 1px solid $table-border-color
 
 		&_type_heading
 			font-weight 500
-			background-color #707070
-			color #fff
+			background-color $table-heading-color
+			color $table-heading-font-color
 
 		+to-width(1025px)
 			&:nth-child(4)
@@ -85,11 +84,11 @@
 				display none
 
 .flight-details
-	background-color: #fff
+	background-color: $table-flight-details-color
 
 	&__item
 		padding 10px
-		border-bottom 1px solid #ddd
+		border-bottom 1px solid $table-border-color
 		text-align center
 
 		&:last-child
@@ -129,7 +128,7 @@
 			display none
 
 	&__code
-		color #555
+		color $table-airport-code-color
 
 .flight-icon
 	display inline-block
@@ -156,15 +155,15 @@
 	margin auto
 	margin-top 15px
 	padding 10px
-	background-color #d9edf7
-	background-image linear-gradient(to bottom,#d9edf7 0,#b9def0 100%)
+	background-color $message-background-color
+	background-image $message-gradient
 	background-repeat repeat-x
 	text-shadow 0 1px 0 rgba(255,255,255,.2)
 	box-shadow inset 0 1px 0 rgba(255,255,255,.25),0 1px 2px rgba(0,0,0,.05)
-	border 1px solid #9acfea
+	border 1px solid $message-border-color
 	border-radius 4px
 	text-align center
 	font-size 16px
-	color #31708f
+	color $message-font-color
 
 
